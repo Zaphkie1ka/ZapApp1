@@ -23,7 +23,9 @@
                                 <DataGridTextColumn Header="Национальность" Binding= "{Binding Name}"/>
                         </DataGrid.Columns>
                 </DataGrid> 
-                <Button x:Name="btn1">
+                <Button x:Name="btn1"
+                        Content="Следующая таблица"
+                        Click="Btn1_Click">
                         
                 </Button>
         </StackPanel>
