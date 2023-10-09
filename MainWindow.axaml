@@ -7,7 +7,7 @@
         x:Class="ZapApp1.MainWindow"
         Title="ZapApp1">
         <StackPanel>
-                <DataGrid x:Name="Passengers"
+                <DataGrid x:Name="Passenger"
                           AutoGenerateColumns="False"
                           IsReadOnly="True"
                           GridLinesVisibility="All"
@@ -17,10 +17,11 @@
                           Margin="0,20">
                         <DataGrid.Columns>
                                 <DataGridTextColumn Header="ФИО" Binding= "{Binding Name}"/>
-                                <DataGridTextColumn Header="Пол" Binding= "{Binding Name}"/>
-                                <DataGridTextColumn Header="Возраст" Binding= "{Binding Name}"/>
-                                <DataGridTextColumn Header="Паспорт" Binding= "{Binding Name}"/>
-                                <DataGridTextColumn Header="Национальность" Binding= "{Binding Name}"/>
+                                <DataGridTextColumn Header="Пол" Binding= "{Binding Sex}"/>
+                                <DataGridTextColumn Header="Возраст" Binding= "{Binding Age}"/>
+                                <DataGridTextColumn Header="Национальность" Binding= "{Binding Nationality}"/>
+                                <DataGridTextColumn Header="Паспорт" Binding= "{Binding Passport}"/>
+                                <DataGridTextColumn Header="Контакт" Binding= "{Binding Contact}"/>
                         </DataGrid.Columns>
                 </DataGrid> 
                 <Button x:Name="btn1"

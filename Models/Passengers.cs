@@ -6,6 +6,7 @@ public class Passengers
     public string Name { get; set; }
     public string Sex { get; set; }
     public int Age { get; set; }
-    public int Passport { get; set; }
     public string Nationality { get; set; }
+    public int Passport { get; set; }
+    public int Contact { get; set; }
 }

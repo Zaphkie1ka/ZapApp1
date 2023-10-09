@@ -13,13 +13,13 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ZapApp1
-build_property.ProjectDir = C:\Users\skyri\RiderProjects\ZapApp1\ZapApp1\
+build_property.ProjectDir = /home/KHPK.RU/student/RiderProjects/ZapApp1/
 
-[C:/Users/skyri/RiderProjects/ZapApp1/ZapApp1/App.axaml]
+[/home/KHPK.RU/student/RiderProjects/ZapApp1/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/skyri/RiderProjects/ZapApp1/ZapApp1/MainWindow.axaml]
+[/home/KHPK.RU/student/RiderProjects/ZapApp1/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/skyri/RiderProjects/ZapApp1/ZapApp1/SecondWindow.axaml]
+[/home/KHPK.RU/student/RiderProjects/ZapApp1/SecondWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

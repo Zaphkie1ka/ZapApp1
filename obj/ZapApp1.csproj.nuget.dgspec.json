@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\skyri\\RiderProjects\\ZapApp1\\ZapApp1\\ZapApp1.csproj": {}
+    "/home/KHPK.RU/student/RiderProjects/ZapApp1/ZapApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\skyri\\RiderProjects\\ZapApp1\\ZapApp1\\ZapApp1.csproj": {
+    "/home/KHPK.RU/student/RiderProjects/ZapApp1/ZapApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\skyri\\RiderProjects\\ZapApp1\\ZapApp1\\ZapApp1.csproj",
+        "projectUniqueName": "/home/KHPK.RU/student/RiderProjects/ZapApp1/ZapApp1.csproj",
         "projectName": "ZapApp1",
-        "projectPath": "C:\\Users\\skyri\\RiderProjects\\ZapApp1\\ZapApp1\\ZapApp1.csproj",
-        "packagesPath": "C:\\Users\\skyri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\skyri\\RiderProjects\\ZapApp1\\ZapApp1\\obj\\",
+        "projectPath": "/home/KHPK.RU/student/RiderProjects/ZapApp1/ZapApp1.csproj",
+        "packagesPath": "/home/KHPK.RU/student/.nuget/packages/",
+        "outputPath": "/home/KHPK.RU/student/RiderProjects/ZapApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\skyri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/KHPK.RU/student/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[2.5.0.2-preview, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Preview.OutputCaching": {
               "target": "Package",
               "version": "[0.0.2-preview, )"
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
         }
       }
     }

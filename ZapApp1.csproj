@@ -17,6 +17,7 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.2"/>
         <PackageReference Include="EventBinder.AvaloniaPreview" Version="2.5.0.2-preview" />
+        <PackageReference Include="MySql.Data" Version="8.1.0" />
         <PackageReference Include="Preview.OutputCaching" Version="0.0.2-preview" />
         <PackageReference Include="ReloadPreview" Version="3.0.7" />
     </ItemGroup>
