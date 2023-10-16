@@ -20,24 +20,38 @@ public partial class MainWindow : Window {
             UserID = "user_01",
             Password = "user01pro"
         };
-        void UpdateDataGrid()
+        UpdateDataGrid();
+        
+    }
+    void UpdateDataGrid()
+    {
+        using (var connection = new MySqlConnection(_connectionSql.ConnectionString))
         {
-            using (var connection = new MySqlConnection(_connectionSql.ConnectionString))
+            connection.Open();
+            using (var command = connection.CreateCommand())
             {
-                connection.Open();
-                using (var command = connection.CreateCommand())
+                command.CommandText = "SELECT * From Passengers";
+                using (var reader = command.ExecuteReader())
                 {
-                    command.CommandText = "SELECT * From passengers";
-                    using (var reader = command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        
+                        passengers.Add(new Passengers
+                        {
+                            ID = reader.GetInt32("PassengerID"),
+                            Name = reader.GetString("Name"),
+                            Sex = reader.GetString("Sex"),
+                            Age = reader.GetInt32("Age"),
+                            Nationality = reader.GetString("Nationality"),
+                            Passport = reader.GetInt32("Passport"),
+                            Contact = reader.GetInt64("Contact")
+                        });
                     }
-                    
                 }
-                connection.Close();
+
             }
-            Passenger.ItemsSource = Passengers;
+            connection.Close();
         }
+        Passenger.ItemsSource = passengers;
     }
     private void Btn1_Click(object? sender, RoutedEventArgs e)
     {
