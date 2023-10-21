@@ -9,5 +9,6 @@ public partial class SecondWindow : Window
     public SecondWindow()
     {
         InitializeComponent();
+        
     }
 }

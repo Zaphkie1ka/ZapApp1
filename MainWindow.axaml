@@ -24,6 +24,39 @@
                                 <DataGridTextColumn Header="Контакт" Binding= "{Binding Contact}"/>
                         </DataGrid.Columns>
                 </DataGrid> 
+                <DataGrid x:Name="Tickets"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          GridLinesVisibility="All"
+                          BorderThickness="1"
+                          BorderBrush="Gray"
+                          x:DataType="models:Tickets"
+                          Margin="0,20">
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Билет" Binding= "{Binding TicketType }"/>
+                                <DataGridTextColumn Header="Пассажир" Binding= "{Binding PassengerID}"/>
+                                <DataGridTextColumn Header="Полет" Binding= "{Binding FlightID}"/>
+                        </DataGrid.Columns>
+                </DataGrid> 
+                <DataGrid x:Name="Flight"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          GridLinesVisibility="All"
+                          BorderThickness="1"
+                          BorderBrush="Gray"
+                          x:DataType="models:Flights"
+                          Margin="0,20">
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Дата" Binding= "{Binding Date }"/>
+                                <DataGridTextColumn Header="Самолет" Binding= "{Binding JetID}"/>
+                                <DataGridTextColumn Header="Место отправления" Binding= "{Binding Departure}"/>
+                                <DataGridTextColumn Header="Место назначения" Binding= "{Binding Destination}"/>
+                                <DataGridTextColumn Header="Время отправления" Binding= "{Binding DepartureTime}"/>
+                                <DataGridTextColumn Header="Время назначения" Binding= "{Binding ArrivalTime}"/>
+                                <DataGridTextColumn Header="Полоса" Binding= "{Binding RunwayID}"/>
+                                <DataGridTextColumn Header="Работники" Binding= "{Binding Staff}"/>
+                        </DataGrid.Columns>
+                </DataGrid> 
                 <Button x:Name="btn1"
                         Content="Следующая таблица"
                         Click="Btn1_Click">

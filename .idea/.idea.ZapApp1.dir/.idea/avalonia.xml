@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="MainWindow.axaml" value="ZapApp1.csproj" />
+        <entry key="SecondWindow.axaml" value="ZapApp1.csproj" />
       </map>
     </option>
   </component>
