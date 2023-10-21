@@ -57,6 +57,19 @@
                                 <DataGridTextColumn Header="Работники" Binding= "{Binding Staff}"/>
                         </DataGrid.Columns>
                 </DataGrid> 
+                <DataGrid x:Name="Jet"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          GridLinesVisibility="All"
+                          BorderThickness="1"
+                          BorderBrush="Gray"
+                          x:DataType="models:Jets"
+                          Margin="0,20">
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Тип билета" Binding= "{Binding JetType }"/>
+                                <DataGridTextColumn Header="Стоимость" Binding= "{Binding SeatCapacity}"/>
+                        </DataGrid.Columns>
+                </DataGrid>
                 <Button x:Name="btn1"
                         Content="Следующая таблица"
                         Click="Btn1_Click">
