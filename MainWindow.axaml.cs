@@ -72,6 +72,19 @@ public partial class MainWindow : Window {
                         });
                     }
                 }
+                command.CommandText = "SELECT * From Tickets";
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        tickets.Add(new Tickets
+                        {
+                            ID = reader.GetInt32("TicketID"),
+                            PassengerID = reader.GetInt32("PassengerIds"),
+                            FlightID = reader.GetInt32("FlightIds")
+                        });
+                    }
+                }
                 command.CommandText = "SELECT * From Passengers";
                 using (var reader = command.ExecuteReader())
                 {
@@ -96,6 +109,7 @@ public partial class MainWindow : Window {
         Passenger.ItemsSource = passengers;
         Flight.ItemsSource = flights;
         Jet.ItemsSource = jets;
+        Ticket.ItemsSource = tickets;
     }
     private void Btn1_Click(object? sender, RoutedEventArgs e)
     {

@@ -24,7 +24,7 @@
                                 <DataGridTextColumn Header="Контакт" Binding= "{Binding Contact}"/>
                         </DataGrid.Columns>
                 </DataGrid> 
-                <DataGrid x:Name="Tickets"
+                <DataGrid x:Name="Ticket"
                           AutoGenerateColumns="False"
                           IsReadOnly="True"
                           GridLinesVisibility="All"
