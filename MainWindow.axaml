@@ -73,7 +73,6 @@
                 <Button x:Name="btn1"
                         Content="Следующая таблица"
                         Click="Btn1_Click">
-                        
                 </Button>
         </StackPanel>
 </Window>

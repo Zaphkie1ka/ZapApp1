@@ -33,7 +33,7 @@ public partial class MainWindow : Window {
         UpdateDataGrid();
         
     }
-    void UpdateDataGrid()
+    public void UpdateDataGrid()
     {
         using (var connection = new MySqlConnection(_connectionSql.ConnectionString))
         {

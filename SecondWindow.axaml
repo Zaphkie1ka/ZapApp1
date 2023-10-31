@@ -1,11 +1,23 @@
 ﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:models="clr-namespace:ZapApp1.Models"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ZapApp1.SecondWindow"
         Title="SecondWindow">
         <StackPanel>
-                
+                        <DataGrid x:Name="Runway"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True"
+                                  GridLinesVisibility="All"
+                                  BorderThickness="1"
+                                  BorderBrush="Gray"
+                                  x:DataType="models:Runways"
+                                  Margin="0,20">
+                                <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Полоса взлета" Binding= "{Binding RunwayTrack}"/>
+                                </DataGrid.Columns>
+                        </DataGrid> 
         </StackPanel>
 </Window>
